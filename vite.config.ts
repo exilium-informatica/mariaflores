@@ -4,7 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/", // Updated to serve at root URL
+  base: "/mariaflores/",
   server: {
     host: "::",
     port: 8080,
