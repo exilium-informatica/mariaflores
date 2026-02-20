@@ -16,11 +16,18 @@ const HeroSection = () => {
         <p className="text-primary-foreground/80 font-body tracking-[0.3em] uppercase text-sm mb-4">
           Suculentas · Cestas · Lembrancinhas
         </p>
-        <h1 className="font-heading text-5xl md:text-7xl font-semibold text-primary-foreground mb-6 leading-tight">
+
+        <h1 className="font-heading text-5xl md:text-7xl font-semibold text-primary-foreground mb-4 leading-tight">
           Maria Flores
         </h1>
-        <p className="text-primary-foreground/90 font-body text-lg md:text-xl mb-10 max-w-xl mx-auto leading-relaxed">
-          Presentes feitos com carinho para tornar cada momento especial
+
+        <h2 className="text-primary-foreground/90 font-body text-xl md:text-2xl mb-6 font-light">
+          Suculentas e Cestas de Café da Manhã em Atibaia
+        </h2>
+
+        <p className="text-primary-foreground/80 font-body text-base md:text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+          Produtos personalizados com entrega em Atibaia e região, criados para
+          tornar cada momento especial.
         </p>
         <a
           href="#categorias"

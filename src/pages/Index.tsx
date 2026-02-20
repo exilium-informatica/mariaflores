@@ -8,47 +8,63 @@ import Footer from "@/components/Footer";
 
 const jsonLd = {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
+  "@type": "Florist",
   name: "Maria Flores",
   description:
-    "Suculentas ornamentais, cestas de café da manhã e lembrancinhas florais.",
-  url: "https://mariaflores.com.br",
+    "Suculentas personalizadas, cestas de café da manhã e lembrancinhas florais com entrega em Atibaia.",
+  url: "https://exilium-informatica.github.io/mariaflores/",
   telephone: "+5511971269213",
+  areaServed: {
+    "@type": "City",
+    name: "Atibaia",
+  },
   address: {
     "@type": "PostalAddress",
-    addressLocality: "Sua Cidade",
+    addressLocality: "Atibaia",
+    addressRegion: "SP",
     addressCountry: "BR",
   },
-  sameAs: [
-    "https://www.instagram.com/maria.d.barbosa?igsh=MWRpb251bjdseTVpbA==",
-  ],
+  sameAs: ["https://www.instagram.com/maria.d.barbosa/"],
 };
 
 const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Maria Flores | Suculentas, Cestas e Lembrancinhas Florais</title>
+        <title>
+          Cestas de Café da Manhã e Suculentas em Atibaia | Maria Flores
+        </title>
+
         <meta
           name="description"
-          content="Presentes com suculentas, cestas de café da manhã e lembrancinhas florais. Feitos à mão com carinho para tornar cada momento especial."
+          content="Vasos de suculentas personalizados, cestas de café da manhã e lembrancinhas florais com entrega em Atibaia. Surpreenda alguém especial com a Maria Flores."
         />
-        <meta
-          name="keywords"
-          content="suculentas, cestas de café da manhã, lembrancinhas florais, presentes, flores"
+
+        <link
+          rel="canonical"
+          href="https://exilium-informatica.github.io/mariaflores/"
         />
-        <link rel="canonical" href="https://mariaflores.com.br" />
+
         <meta
           property="og:title"
-          content="Maria Flores | Suculentas, Cestas e Lembrancinhas"
+          content="Cestas e Suculentas em Atibaia | Maria Flores"
         />
+
         <meta
           property="og:description"
-          content="Presentes feitos com carinho. Suculentas, cestas de café da manhã e lembrancinhas florais."
+          content="Presentes personalizados com entrega em Atibaia. Cestas de café da manhã, suculentas e lembrancinhas florais."
         />
+
         <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://exilium-informatica.github.io/mariaflores/"
+        />
+
         <script type="application/ld+json">{JSON.stringify(jsonLd)}</script>
       </Helmet>
+
       <Header />
       <main>
         <HeroSection />
