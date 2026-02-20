@@ -9,6 +9,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -24,3 +27,5 @@ jobs:
         with:
           github_token: ${{ secrets.mariaflores }}
           publish_dir: ./dist
+          publish_branch: gh-pages
+          force_orphan: true
